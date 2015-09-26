@@ -1,0 +1,11 @@
+html {
+    background: url(static/images/underwater_stefanus_martanto_setyo_husodo.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1.title {
+    text-align: center;
+    color: white;
+}
