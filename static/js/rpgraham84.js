@@ -1,9 +1,13 @@
 $(window).load(function(){
     apod.get(new Date(),
         function(a){
-            $('html').css('background-image', 'url(' + a.pictureURL + ')');
+            $('html')
+                .css('background', 'url(' + a.pictureURL + ') no-repeat center center fixed')
+                .css('background-size', 'cover');
         }, function () {
-            $('html').css('background-image', 'url(/static/images/underwater_stefanus_martanto_setyo_husodo.jpg)');
+            $('html')
+                .css('background', 'url(/static/images/underwater_stefanus_martanto_setyo_husodo.jpg) no-repeat center center fixed')
+                .css('background-size', 'cover');
         });
 });
 
