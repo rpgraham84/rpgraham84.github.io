@@ -4,6 +4,8 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
