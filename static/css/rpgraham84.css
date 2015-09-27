@@ -20,6 +20,9 @@ html, button, input, select, textarea,
 .glow-gray {
     text-shadow: 0 1px 3px #aaa;
 }
+.full-width {
+    width: 100%;
+}
 .ghost-panel {
     background-color: rgba(255,255,255,0.9);
     box-shadow: 0 0 1em white;
@@ -31,10 +34,18 @@ html, button, input, select, textarea,
 .padding-1 {
     padding: 1em;
 }
+.padding-sides-1 {
+    padding: 0 1em;
+}
 .sidebar {
     
 }
+.my-name {
+    font-size: 2em;
+    margin-top: 30px;
+}
 .nav-link {
+    font-size: 2em;
     color: black;
     text-decoration: none;
 }
@@ -108,7 +119,7 @@ html, button, input, select, textarea,
 }
 .form-input {
     width: 100%;
-    border: #aaa 0 0 0 1px solid;
+    border: none;
 
 }
 .modal-body {
@@ -138,5 +149,9 @@ html, button, input, select, textarea,
     display: none;
 }
 .social-lockup {
-    margin-top: 2em;
+    position: fixed;
+    bottom: 0;
+    margin: 0 1em;
+    padding: 0.2em;
+    text-shadow: 0 0 2px white;
 }
