@@ -1,11 +1,140 @@
 html {
-    background: url(/static/images/underwater_stefanus_martanto_setyo_husodo.jpg) no-repeat center center fixed;
+    background: white no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-h1.title {
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.text-center {
     text-align: center;
-    color: white;
+}
+.text-left {
+    text-align: left;
+}
+.glow-gray {
+    text-shadow: 0 1px 3px #aaa;
+}
+.ghost-panel {
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 1em white;
+    border-radius: 0.5em;
+}
+.margin-1 {
+    margin: 1em;
+}
+.padding-1 {
+    padding: 1em;
+}
+.sidebar {
+    
+}
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+.inner-sidebar {
+    border-radius: 0 0 0.5em 0.5em;
+    margin: 0 1em;
+}
+.profile-image {
+    background-image: url(/static/images/bobface.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    border-radius: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-close {
+    color: #aaaaaa;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.btn-close:hover {
+    color: #919191;
+}
+
+.modal:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal:target:before {
+    display: block;
+}
+
+.modal:target .modal-dialog {
+    position: fixed;
+    left: 50%;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    top: 20%;
+}
+
+.modal-dialog {
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 1em white;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    z-index: 11;
+    width: 360px;
+    -webkit-transform: translate(0, -500%);
+    -ms-transform: translate(0, -500%);
+    transform: translate(0, -500%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+.block-label {
+    display: block;
+}
+.form-input {
+    width: 100%;
+    border: #aaa 0 0 0 1px solid;
+
+}
+.modal-body {
+    padding: 20px;
+}
+
+.modal-header,
+.modal-footer {
+    padding: 10px 20px;
+}
+
+.modal-header {
+    border-bottom: #eeeeee solid 1px;
+}
+
+.modal-header h2 {
+    font-size: 20px;
+}
+
+.modal-footer {
+    border-top: #eeeeee solid 1px;
+    text-align: right;
+}
+
+/*ADDED TO STOP SCROLLING TO TOP*/
+#close {
+    display: none;
+}
+.social-lockup {
+    margin-top: 2em;
 }
