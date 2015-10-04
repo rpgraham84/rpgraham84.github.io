@@ -11,6 +11,9 @@ html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     font-family: 'Josefin Sans', sans-serif;
 }
+.pure-g [class *= "pure-u"].content {
+    font-family: 'Open Sans', sans-serif;
+}
 .text-center {
     text-align: center;
 }
@@ -40,6 +43,7 @@ html, button, input, select, textarea,
 .sidebar {
     
 }
+
 .my-name {
     font-size: 2em;
     margin-top: 30px;
@@ -53,13 +57,18 @@ html, button, input, select, textarea,
     border-radius: 0 0 0.5em 0.5em;
     margin: 0 1em;
 }
+.inner-sidebar iframe.twitter-timeline {
+    margin: 30px auto !important;
+    display: block !important;
+    position: relative !important;
+}
 .profile-image {
     background-image: url(/static/images/bobface.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 120px;
-    width: 120px;
-    border-radius: 120px;
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -79,7 +88,7 @@ html, button, input, select, textarea,
     content: "";
     display: none;
     background: rgba(0, 0, 0, 0.6);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -91,8 +100,7 @@ html, button, input, select, textarea,
 }
 
 .modal:target .modal-dialog {
-    position: fixed;
-    left: calc(50% - 180px);
+
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
@@ -100,12 +108,15 @@ html, button, input, select, textarea,
 }
 
 .modal-dialog {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,1);
     box-shadow: 0 0 1em white;
     border-radius: 0.5em;
     margin: 0 auto;
     z-index: 11;
     width: 360px;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 180px);
     -webkit-transform: translate(0, -500%);
     -ms-transform: translate(0, -500%);
     transform: translate(0, -500%);
@@ -119,7 +130,7 @@ html, button, input, select, textarea,
 }
 .form-input {
     width: 100%;
-    border: none;
+
 
 }
 .modal-body {
