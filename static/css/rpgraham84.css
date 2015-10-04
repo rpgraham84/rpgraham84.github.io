@@ -28,8 +28,8 @@ html, button, input, select, textarea,
 }
 .ghost-panel {
     background-color: rgba(255,255,255,0.9);
-    box-shadow: 0 0 1em white;
-    border-radius: 0.5em;
+
+    border-radius: 0.4em;
 }
 .margin-1 {
     margin: 1em;
@@ -41,9 +41,11 @@ html, button, input, select, textarea,
     padding: 0 1em;
 }
 .sidebar {
-    
-}
 
+}
+.content {
+    margin-top: 1em;
+}
 .my-name {
     font-size: 2em;
     margin-top: 30px;
@@ -54,13 +56,15 @@ html, button, input, select, textarea,
     text-decoration: none;
 }
 .inner-sidebar {
-    border-radius: 0 0 0.5em 0.5em;
+    border-radius: 0 0 0.4em 0.4em;
     margin: 0 1em;
 }
 .inner-sidebar iframe.twitter-timeline {
     margin: 30px auto !important;
     display: block !important;
     position: relative !important;
+    border: none !important;
+    border-radius: 0 !important;
 }
 .profile-image {
     background-image: url(/static/images/bobface.jpg);
@@ -89,6 +93,7 @@ html, button, input, select, textarea,
     display: none;
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
+    z-index: 10;
     top: 0;
     left: 0;
     right: 0;
@@ -164,5 +169,4 @@ html, button, input, select, textarea,
     bottom: 0;
     margin: 0 1em;
     padding: 0.2em;
-    text-shadow: 0 0 2px white;
 }

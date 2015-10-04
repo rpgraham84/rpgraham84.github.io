@@ -38,7 +38,7 @@
             </form>
         </div>
         <div class="modal-footer">
-            <a class="pure-button gray bg-silver" href="#close" class="btn">Cancel</a>
+            <a class="pure-button white bg-silver" href="#close" class="btn">Cancel</a>
             <a class="pure-button white bg-gray" href="javascript: $('form#contact').submit()">Submit</a>
         </div>
     </div>
@@ -50,10 +50,11 @@
         <div class="inner-sidebar text-center padding-1 ghost-panel">
             <div class="profile-image"></div>
             <div class="my-name"><a class="nav-link" href="/">Robert Graham</a></div>
+            <h2>< Python/Web Developer ></h2>
             <hr>
             <div>
-                <a class="nav-link padding-sides-1" href="" onclick="clickDataLink(event); return false" data-file="/blog.json">Blog</a>
-                <a class="nav-link padding-sides-1" href="" onclick="clickDataLink(event); return false" data-file="/projects.json">Projects</a>
+                <a class="nav-link padding-sides-1" href="#content" onclick="clickDataLink(event)" data-file="/blog.json">Blog</a>
+                <a class="nav-link padding-sides-1" href="#content" onclick="clickDataLink(event)" data-file="/projects.json">Projects</a>
                 <a class="nav-link padding-sides-1" href="#contact-modal">Contact</a>
             </div>
         </div>
@@ -62,7 +63,7 @@
         </div>
 
     </div>
-    <div class="content pure-u-1 pure-u-lg-3-4">
+    <div class="content pure-u-1 pure-u-lg-3-4" id="content">
         <div id="pckry"></div>
     </div>
 </div>
