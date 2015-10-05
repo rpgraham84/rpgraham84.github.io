@@ -9,10 +9,13 @@ html {
 }
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-    font-family: 'Josefin Sans', sans-serif;
-}
-.pure-g [class *= "pure-u"].content {
     font-family: 'Open Sans', sans-serif;
+}
+.pure-g [class *= "pure-u"] .my-name .nav-link {
+    font-family: 'Permanent Marker', sans-serif;
+}
+.pure-g [class *= "pure-u"] .nav-link {
+    font-family: 'Source Code Pro', sans-serif;
 }
 .text-center {
     text-align: center;
@@ -61,10 +64,22 @@ html, button, input, select, textarea,
 }
 .inner-sidebar iframe.twitter-timeline {
     margin: 30px auto !important;
+    max-width: none !important;
+    width: 100% !important;
     display: block !important;
     position: relative !important;
     border: none !important;
     border-radius: 0 !important;
+}
+div.timeline {
+    max-width: none;
+}
+iframe#ghcard-rpgraham84-1 {
+    width: 100%;
+    margin-bottom: 3em;
+}
+iframe [id *= "ghcard"] {
+    display: block;
 }
 .profile-image {
     background-image: url(/static/images/bobface.jpg);
