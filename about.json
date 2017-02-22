@@ -1,7 +1,7 @@
 [
     {
         "title": "About Me",
-        "htmlContent": "<div>I am a full-time web developer at <a target=\"_blank\" href=\"https://dev.guygunterhome.com\">Guy Gunter Home</a>.</div><div>I use Python and Javascript to make the web do awesome things.</div><div>I'll be filling this in more as I have time.</div>",
+        "htmlContent": "<div>I am a full-time web developer at <a target=\"_blank\" href=\"https://guygunterhome.com\">Guy Gunter Home</a>.</div><div>I use Python and Javascript to make the web do awesome things.</div><div>I'll be filling this in more as I have time.</div>",
         "date": "2015-10-05T02:45:34.258Z"
     }
 ]
